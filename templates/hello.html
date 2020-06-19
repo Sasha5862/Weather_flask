@@ -1,0 +1,15 @@
+<!doctype html>
+<title>Hello from Flask</title>
+{% if city %}
+  <h1>Город {{ city }}!</h1>
+  {% for c_c in coun_cit %}
+  {{ temp }}
+  {{ wind_sp }}
+  {{ temp_app }}
+  {{ water }}
+  {{ ob }}
+  {{ c_c.city }}
+  {% endfor %}
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
